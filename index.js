@@ -26,3 +26,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+var nome = document.getElementById("nome");
+var telefone = document.getElementById("telefone");
+var email= document.getElementById("email");
+
+function enviar(){
+if(nome.value==""||telefone.value==""||email.value==""){
+   alert("Preencha os campos"); 
+}else{
+    alert("Enviado com sucesso");
+}
+
+}
